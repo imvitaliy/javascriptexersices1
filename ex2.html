@@ -1,16 +1,25 @@
-
-<!-- Create a file ex2.js (get the code from ex1.js) Our function must line-through a <li> inside our <ul> by clicking on <li>--> 
+<!-- Create a file ex1.js Our function must insert a new <li> inside our <ul> by clicking on div (red box)--> 
 
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="ex.css" />
+    <link rel="stylesheet" type="text/css" href="ex2.css" />
     <script defer type="text/javascript" src="ex2.js"></script>
   </head>
   <body>
     <div id="addLi" class="box red"></div>
+    <input id="intro"/>
     <ul id="list">
-    	
+		<!-- Here the <li> -->
     </ul>
   </body>
 </html>
+
+<!--
+var cuad= document.getElementById("addLi");
+cuad.onclick = function(){
+var list = document.getElementById("list");
+var s=document.createElement('li');
+s.innerHTML = "nuevo li";
+list.appendChild(s);
+}
